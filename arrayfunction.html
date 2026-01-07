@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruits=["apple","banana","mango"];
+        document.write("item in 0th index:" + fruits[0] + "<br>");
+
+        fruits[1]="watermelon";
+        document.write("item in 1st index is changed:" + fruits + "<br>");
+
+        document.write("length of array:" + fruits.length + "<br>");
+
+        fruits.push("orange");
+        document.write("after push:" + fruits + "<br>");
+
+        fruits.pop();
+        document.write("after pop:" + fruits + "<br>");
+
+        document.write("index of mango:" + fruits.indexof("mango") + "<br>");
+
+        document.write("sorted array:" + fruits.sort() + "<br>");
+
+        document.write("reversed array:" + fruits.reverse() + "<br>");
+
+
+    </script>
+</body>
+</html>

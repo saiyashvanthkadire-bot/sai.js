@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let num1= parseFloat(prompt("enter a number"));
+       let num2= parseFloat(prompt("enter a number"));
+       let op= parseFloat(prompt("enter a operator"));
+       let result;
+
+       if(op==="+")
+       {
+           result=num1+num2;
+       }
+       else if(op==="-")
+       {
+           result=num1-num2;
+
+       }
+       else if(op==="*")
+       {
+           result=num1*num2;
+
+       }
+       else if(op==="/")
+       {
+         if(num2!==0)
+         {
+            result=num1/num2;
+         }
+         else{
+            result=("invalid input");
+         }
+       }
+       else{
+           result="invalid operator"
+       }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="info">hello student</p>
+    <p class="info">welcome to js</p>
+    <button onclick="highlight()">highlight</button>
+    <script>
+    function highlight(){
+        const para=document.getElementsByClassName("info");
+        for(let i=0;i<para.length;i++){
+            para[i].style.color="yellow";
+        }
+    }
+    </script>
+</body>
+</html>

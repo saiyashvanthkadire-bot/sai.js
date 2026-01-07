@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="title">welcome to DOM example</h2>
+    <p class="info"> this is a first para</p>
+    <p class="info">this is a second para</p>
+    <button id="btn" onclick="change()">click me</button>
+    <script>
+        function change(){
+            let firstpara=document.querySelector(".info");
+            console.log(firstpara.textcontect);
+
+            let heading=document.querySelector("h2.title");
+            heading.style.color672="red";
+
+            let button=document.querySelector("#btn");
+            button.style.backgroundColor="yellow";
+
+            let paras=document.querySelectorAll(".info");
+            for(let i=0;i<paras.length;i++){
+                paras[i].style.color="blue";
+                paras[i].style.fontweight="bold";
+            }
+        }
+    </script>
+</body>
+</html>
